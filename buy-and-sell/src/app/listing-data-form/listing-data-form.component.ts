@@ -10,6 +10,10 @@ import { EVENT_MANAGER_PLUGINS } from '@angular/platform-browser';
 })
 export class ListingDataFormComponent implements OnInit{
   @Input() buttonText;
+  @Input() currentName = '';
+  @Input() currentDescription = '';
+  @Input() currentPrice;
+
   name: string = '';
   description: string = '';
   price: string = '';
@@ -21,6 +25,9 @@ export class ListingDataFormComponent implements OnInit{
   ) {}
 
   ngOnInit(): void {
+    this.name = this.currentName;
+    this.description = this.currentDescription;
+    this.price = this.currentPrice;
   }
 
   onButtonClicked(): void {
