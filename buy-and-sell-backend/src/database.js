@@ -1,7 +1,7 @@
 import mysql from 'mysql';
 
 const connection = mysql.createConnection({
-    host: 'localhost',
+    host: '34.105.196.220',
     user: 'hapi-server',
     password: 'abc123!',
     database: 'buy-and-sell',
